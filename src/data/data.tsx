@@ -19,17 +19,13 @@ import LinkedInIcon from '../components/Icon/LinkedInIcon';
 //import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 //import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
-import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
-import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
-import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
-import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
-import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
-import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
-import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
-import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
-import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
-import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
-import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
+import hackathon1 from 'public/portfolio/hackathon/hackathon1.png';
+import earthquake1 from 'public/portfolio/earthquake/earthquake1.png';
+//import earthquake2 from 'public/portfolio/earthquake/earthquake2.png';
+//import hackathon2 from 'public/portfolio/hackathon/hackathon2.png';
+import ml1 from 'public/portfolio/ml/ml1.png';
+import data2 from 'public/portfolio/data/data2.png';
+
 import {
   About,
   ContactSection,
@@ -58,7 +54,7 @@ export const SectionId = {
   Hero: 'home',
   About: 'about',
   Contact: 'contact',
-  //Portfolio: 'portfolio',
+  Portfolio: 'portfolio',
   Resume: 'resume',
   Skills: 'skills',
   Stats: 'stats',
@@ -82,7 +78,7 @@ export const heroData: Hero = {
         Combined with real-world software development experience and a proven track record in leadership, problem-solving, and effective communication, I am well-equipped to contribute to any technical team.
         Feel free to explore this website to learn more about me, understand my strengths in greater depth, view my resume, testimonial, and projects. 
         Lastly, feel free to connect with me through either 
-        <strong className="text-stone-100"><Link href="https://www.linkedin.com/in/jacob-mark-novak/">LinkedIn</Link></strong>, or the <strong className="text-stone-100"><a href='/#contact'>contact me </a></strong> page on this site.      </p>
+        <strong className="text-stone-100"><Link href="https://www.linkedin.com/in/jacob-mark-novak/"> LinkedIn</Link></strong>, or the <strong className="text-stone-100"><a href='/#contact'>contact me </a></strong> page on this site.      </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
       </p>
     </>
@@ -102,15 +98,15 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: '/Headshot.PNG' ,
-  description: `Originally from Lake Tahoe, I grew up skiing, camping, and hiking. In middle school, my family moved to the mountains of Colorado. Tired of the cold, I eventually moved to San Diego, CA, where I am currently a senior at Point Loma Nazarene University studying Computer Science with an emphasis in Cybersecurity and a minor in Software Engineering.
+  description: `Originally from Lake Tahoe, I grew up skiing, camping, and hiking. In middle school, my family moved to the mountains of Colorado. Tired of the cold, I eventually moved to San Diego, CA, where I graduated from Point Loma Nazarene University with a BS in Computer Science with an emphasis in Cybersecurity and a minor in Software Engineering.
 
-While at PLNU, I have taken on every opportunity to challenge myself and gain expertise through completing certifications, competing in competitions, and participating in multiple internships, which have provided me with a diverse skill set.
+While at PLNU, I took on every opportunity to challenge myself and gain expertise through completing certifications, competing in competitions, and participating in multiple internships, which have provided me with a diverse skill set.
 
-Currently, I am working in the DoD space as a research intern at the Georgia Tech Research Institute.
+Currently, I am working in the biopharmaceutical space as a cyber security intern at Neurocrine Biosciences.
 
-My main interests within computer science revolve around SecDevOps, vulnerability management and mitigation in enterprise software, and threat detection and analysis.
+My main interests within computer science revolve around software development, SecDevOps, vulnerability management and mitigation in enterprise software, and threat detection and analysis.
 
-Going forward, after graduation, I am looking for full-time positions in software engineering or cybersecurity.
+Currently, I am looking for full-time positions in software engineering or cybersecurity.
         
         
         `,
@@ -120,7 +116,7 @@ Going forward, after graduation, I am looking for full-time positions in softwar
     //{label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
     {label: 'Interests', text: 'Basketball, Guitar, Drums', Icon: SparklesIcon},
     {label: 'School', text: 'Point Loma Nazarene University', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Georgia Tech Research Institute', Icon: BuildingOffice2Icon},
+    {label: 'Employment', text: 'Neurocrine Biosciences', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -130,71 +126,30 @@ Going forward, after graduation, I am looking for full-time positions in softwar
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage1,
+    title: 'SDSU /SHARP Big Data Hackathon 1st Place Mobile App',
+    description: 'Mobile Application Developed using React and Typescript for scheduling and managing Non-Emergency Medical Transportation (NEMT) Rides for loved ones. This mobile application won my team 1st place at the SDSU/SHARP Big Data Hackathon in October 2024.',
+    url: 'https://github.com/jnovak0021/HACKATHON-NEMT-APP',
+    image: hackathon1,
   },
   {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage2,
+    title: 'USGS Earthquake Data Web Application',
+    description: 'This project was developed using docker to containerize a mysql database, a goland backend, and a nextjs frontend. The goal of creating this full stack web-application was to allow users to view earthquake data across the globe by interacting with a globe.',
+    url: 'https://github.com/jnovak0021/Earthquake_Globe_Web',
+    image: earthquake1,
   },
   {
-    title: 'Project title 3',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage3,
+    title: 'Data Visualization Dashboard',
+    description: 'This project was developed using React, Typescript, and Tailwind CSS. The goal of this project was to create a data visualization dashboard that allows users to view and interact with data in a visually appealing way.',
+    url: 'https://github.com/jnovak0021/Data_Dashboard',
+    image: data2,
   },
   {
-    title: 'Project title 4',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage4,
+    title: 'Machine Learning project for predicting earthquake magnitude',
+    description: 'The project leverages machine learning using Linear, Polynomial, and Random Forest regression models with feature selection and hyperparameter tuning to accurately predict earthquake magnitudes from 25 years of global data, supported by data processing and visualization in both Python and R.',
+    url: 'https://github.com/jnovak0021/Earthquake_ML',
+    image: ml1,
   },
-  {
-    title: 'Project title 5',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage5,
-  },
-  {
-    title: 'Project title 6',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage6,
-  },
-  {
-    title: 'Project title 7',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage7,
-  },
-  {
-    title: 'Project title 8',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage8,
-  },
-  {
-    title: 'Project title 9',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage9,
-  },
-  {
-    title: 'Project title 10',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage10,
-  },
-  {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage11,
-  },
+
 ];
 
 /**
@@ -291,6 +246,11 @@ export const contact: ContactSection = {
       type: ContactType.Github,
       text: 'jnovak0021',
       href: 'https://github.com/jnovak0021',
+    },
+    {
+      type: ContactType.Phone,
+      text: '970-390-8232',
+      href: 'tel:970-390-8232',
     },
   ],
 };

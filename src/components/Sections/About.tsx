@@ -1,4 +1,4 @@
-import {ArrowDownTrayIcon, ChevronDownIcon} from '@heroicons/react/24/outline';
+import {/*ArrowDownTrayIcon, */ChevronDownIcon} from '@heroicons/react/24/outline';
 import Image from 'next/image';
 import React,{FC, memo} from 'react';
 
@@ -6,9 +6,9 @@ import {aboutData, SectionId} from '../../data/data';
 import Section from '../Layout/Section';
 
 const About: FC = memo(() => {
-  const openPdf = () => {
+  /*const openPdf = () => {
     window.open('/Mission, Vision, Values and Goals Paper.pdf', '_blank');
-  };
+  };*/
 
   const {profileImageSrc, description, aboutItems} = aboutData;
 
