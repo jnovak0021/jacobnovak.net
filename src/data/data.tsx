@@ -104,7 +104,7 @@ While at PLNU, I took on every opportunity to challenge myself and gain expertis
 
 Currently, I am working in the biopharmaceutical space as a cyber security intern at Neurocrine Biosciences.
 
-My main interests within computer science revolve around software development, SecDevOps, vulnerability management and mitigation in enterprise software, and threat detection and analysis.
+My main interests within computer science revolve around software development, DevSecOps, vulnerability management and mitigation in enterprise software, and threat detection and analysis.
 
 Currently, I am looking for full-time positions in software engineering or cybersecurity.
         
